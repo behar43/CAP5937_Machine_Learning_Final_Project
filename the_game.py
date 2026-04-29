@@ -42,21 +42,6 @@ def main():
         
         state, reward, done = game.step(ai_action)
         
-#        action = None # Default: no action
-#        if keys[pygame.K_LEFT]:
-#            action = 0 # Turn Left
-#        elif keys[pygame.K_RIGHT]:
-#            action = 1 # Turn Right
-#        elif keys[pygame.K_UP]:
-#            action = 2 # Move Forward
-#        elif keys[pygame.K_SPACE]:
-#            action = 3 # Shoot
-#    
-#        # 3. Step the Game
-#        # If action is None, the tank just sits still
-#        if action is not None:
-#            state, reward, done = game.step(action)
-        
         # 4. Draw to Screen
         game.render()
     

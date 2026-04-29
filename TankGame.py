@@ -36,13 +36,6 @@ class TankGame:
         self.shoot_cooldown = 0
         return self._get_state()
 
-#    def _get_state(self):
-#        # This is what you feed your ML model
-#        # Normalized relative positions are usually best for ML
-#        rel_x = (self.player_pos[0] - self.ai_pos[0]) / SCREEN_WIDTH
-#        rel_y = (self.player_pos[1] - self.ai_pos[1]) / SCREEN_HEIGHT
-#        return [rel_x, rel_y, self.ai_pos[2] / 360.0]
-
     def _get_state(self):
         dx = self.player_pos[0] - self.ai_pos[0]
         dy = self.player_pos[1] - self.ai_pos[1]
